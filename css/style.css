@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -558,5 +560,187 @@ body {
 @media (max-width: 480px) {
   .make .make-cards-card {
     width: 100%;
+  }
+}
+
+.hope {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+.hope .hope-text {
+  width: 351px;
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.hope .hope-text h2 {
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.hope .hope-text p {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.3999999762px;
+  text-align: center;
+  color: #000000;
+}
+.hope .hope-ins {
+  width: 100%;
+  height: 404px;
+  background-color: #9AA8B1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hope .hope-ins img {
+  width: 40px;
+  height: 34px;
+}
+.hope .hope-ins h2 {
+  font-family: Roboto;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 58px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hope .hope-ins p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.8000000119px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: 668px;
+  top: 5872px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #F9F9F9;
+}
+.footer .go {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 0px;
+}
+.footer .go .goes {
+  width: 82px;
+  height: 82px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .go .goes h3 {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.8000000119px;
+  text-align: center;
+  color: aliceblue;
+}
+.footer .footer-list {
+  width: 50%;
+  height: 70%;
+  padding: 10px;
+  display: flex;
+  gap: 70px;
+}
+.footer .footer-list .footer-list-items .fli-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .footer-list .footer-list-items .fli-link {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+.footer .footer-list .fli-new {
+  width: 348px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid;
+}
+.footer .footer-list .fli-new h3 {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+.footer .footer-list .fli-new p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  letter-spacing: 0.8000000119px;
+  text-align: left;
+  color: #A0A0A0;
+}
+.footer .policy {
+  width: 100%;
+  height: 10%;
+  margin-top: 1.3cm;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+.footer .policy .policy-ul {
+  display: flex;
+  gap: 20px;
+}
+.footer .policy .policy-ul .policy-ul-li {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  letter-spacing: 0.8000000119px;
+  text-align: right;
+  color: #707A7F;
+}
+
+@media (max-width: 992px) {
+  .footer-list {
+    flex-direction: column;
+  }
+  .footer-list .fli-new {
+    margin-top: -1cm;
+  }
+  .footer-list .footer-list-items {
+    margin-bottom: 20px;
+  }
+  .policy {
+    margin-top: 10cm;
   }
 }

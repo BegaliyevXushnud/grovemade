@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.hope{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    .hope-text{
+        width: 351px;
+height: 106px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+h2{
+    font-family: Roboto;
+font-size: 34px;
+font-weight: 400;
+line-height: 36px;
+text-align: center;
+color: #000000;
+}
+p{
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 1.399999976158142px;
+text-align: center;
+color: #000000;
+}
+    }
+    .hope-ins{
+        width: 100%;
+        height: 404px;
+        background-color: #9AA8B1;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 30px;
+       img{
+        width: 40px;
+height: 34px;
+       }h2{
+        font-family: Roboto;
+font-size: 43px;
+font-weight: 400;
+line-height: 58px;
+text-align: center;
+color: #FFFFFF;
+       }
+       p{
+        font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.800000011920929px;
+text-align: center;
+color: #FFFFFF;
+       }
+    }
+}
