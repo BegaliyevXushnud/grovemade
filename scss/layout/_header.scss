@@ -1,0 +1,147 @@
+%global_hover {
+    &:hover {
+        background: none;
+        color: #A259FF;
+        border: 1px solid #A259FF;
+    }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    z-index: 999;
+    background: #FFFFFF;
+    
+    &__shrink {
+      
+        box-shadow: 0px 0px 10px skyblue;
+    }
+    
+    &__btn-hamburger {
+        width: 20px;
+        background: transparent;
+        border: none;
+    }
+    
+    &__logo {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    
+    &__list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px skyblue;
+        transition: 0.4s;
+        background: #2B2B2B;
+    }
+    
+    &__btn-hamburger {
+        color: rgb(200, 25, 25);
+        font-size: 25px;
+    }
+    
+    &__list-show {
+        left: 0;
+    }
+    
+    .header__list {
+        gap: 25px;
+        background: transparent;
+        
+    }
+    
+    .header_link {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        position:relative;
+        font-family: Work Sans;
+      
+    }
+    .header_link {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        position:relative;
+        font-family: Work Sans;
+    }
+    .header_link::after {
+        content: "";
+        position: absolute;
+        background-color: #A259FF;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: all 0.3s linear;
+       
+    }
+
+    .header_link:hover {
+        color: #A259FF;
+    }
+
+    .header_link:hover::after {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .header {
+        
+
+        .header__logo {
+            .nav-logo {
+                width: 200px;
+                height: 20px;
+            }
+        }
+        
+       
+        
+        &__list {
+            position: static;
+            flex-direction: row;
+            box-shadow: none;
+            height: auto;
+            width: auto;
+          
+        }
+        
+        &__btn-hamburger {
+            display: none;
+        }
+        
+        .header_btns {
+            display: none;
+        }
+        
+        .header_link {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15.23px;
+            letter-spacing: 1.399999976158142px;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        .header-button {
+            display: none;
+        }
+    }
+}

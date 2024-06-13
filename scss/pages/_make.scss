@@ -1,0 +1,79 @@
+.make {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+
+    .make-text {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+    }
+
+    .make-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .make-cards-card {
+        width: calc(15% - 20px);
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+overflow: hidden;
+        img {
+           width: 100%;
+           height: 100%;
+            margin: 0 auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .make-cards-card {
+            width: calc(33.33% - 20px);
+        }
+    }
+
+    @media (max-width: 992px) {
+        .make-cards-card {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .make-cards-card {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .make-cards-card {
+            width: 100%;
+        }
+    }
+}
